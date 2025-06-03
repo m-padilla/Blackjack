@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+        Author: Marco Padilla
+        Date: 05/26/2024
+        Filename: index.html
+        Supporting Files: style.css, app.js
+        Modified by: Marco Padilla
+        Date Modified: 05/26/2024
+        -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baccarat</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1 class="banner"><span>Blackjack</span></h1>
+    <article class="regular">
+      <div class="temp">
+       
+
+        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <div id="dealer-cards">
+          <img src="/card_back.png" id="hidden-card" />
+        </div>
+
+        <h2>Player: <span id="player-sum"></span></h2>
+        <div id="player-cards"></div>
+
+        <br />
+
+        <div id="buttons">
+          <button id="hit">Hit</button>
+          <button id="stay">Stay</button>
+        </div>
+
+        <!-- <div id="result"></div> -->
+      </div>
+    </article>
+
+    <script type="module" src="./blackjack.js"></script>
+  </body>
+</html>
